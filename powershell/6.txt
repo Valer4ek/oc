@@ -1,0 +1,2 @@
+
+PS D:\IT\powershell>  Get-ChildItem C:\Windows | Where-Object { $_.Length -gt 10000 } | Sort-Object Length | ConvertTo-Html | tee 6.html

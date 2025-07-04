@@ -1,0 +1,1 @@
+Get-Process | Where-Object { $_.BasePriority -gt 7 } | Select-Object Name, BasePriority, Company | Sort-Object Name | ConvertTo-Html | tee 4_6.html
